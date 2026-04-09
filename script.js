@@ -1,7 +1,7 @@
 const getSumBtn = document.querySelector("button");
 
 const getSum = () => {
-	const prices = document.querySelectorAll(".prices");
+	const prices = document.querySelectorAll(".price");
 
 	let total = 0;
 
