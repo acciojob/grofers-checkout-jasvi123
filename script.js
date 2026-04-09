@@ -20,7 +20,7 @@ const getSum = () => {
 	}
 
 	const newRow = document.createElement("tr");
-	newRow = setAttribute("id","table-row");
+	newRow.setAttribute("id","table-row");
 	const newCell = document.createElement("td");
 
 	newCell.setAttribute("colspan","2");
