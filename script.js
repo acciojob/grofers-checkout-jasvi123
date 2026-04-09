@@ -23,8 +23,8 @@ const getSum = () => {
 	newRow.setAttribute("id","table-row");
 	const newCell = document.createElement("td");
 
-	newCell.setAttribute("colspan","2");
-	newCell.textContent = total;
+	newCell.colSpan =2;
+	newCell.textContent = `Total Price: ${total}`;
 
 	newRow.appendChild(newCell);
 	table.appendChild(newRow); 
