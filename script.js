@@ -1,5 +1,3 @@
-const getSumBtn = document.querySelector("button");
-
 const getSum = () => {
 	const prices = document.querySelectorAll(".price");
 
@@ -28,5 +26,9 @@ const getSum = () => {
 	table.appendChild(newRow); 
 };
 
-getSumBtn.addEventListener("click", getSum);
+window.onload = () => {
+	const btn = document.querySelector("button");
+	btn.addEventListener("click", getSum);	
+}
+
 
