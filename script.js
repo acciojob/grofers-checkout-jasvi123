@@ -13,7 +13,14 @@ const getSum = () => {
 	});
 
 	const table = document.querySelector("table");
+	const existingRow = document.getElementById("table-row");
+
+	if(existingRow){
+		existingRow.remove();
+	}
+
 	const newRow = document.createElement("tr");
+	newRow = setAttribute("id","table-row");
 	const newCell = document.createElement("td");
 
 	newCell.setAttribute("colspan","2");
